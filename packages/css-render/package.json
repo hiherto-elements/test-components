@@ -1,0 +1,14 @@
+{
+  "name": "css-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reset": "rm -rf node_modules && rm -rf package-lock.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
