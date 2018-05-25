@@ -8,6 +8,6 @@
 	}, 
 	"scripts": {
 		"test": "npm run postinstall && lerna run test",
-		"postinstall": "lerna run bootstrap"
+		"postinstall": "lerna bootstrap"
 	}
 }
