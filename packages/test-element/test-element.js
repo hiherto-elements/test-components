@@ -70,6 +70,10 @@ static get properties() { return { mood: String }}
     <style include="test-component-style"></style>
     <div 
       id="mdc-text-field">
+      <template is="dom-if" if="{{_hasIcon(icon)}}">
+        <i class="material-icons mdc-text-field__icon" tabindex="0">EDIT</i>
+      </template>
+      
 
       <input 
           type="text" 
@@ -84,6 +88,7 @@ static get properties() { return { mood: String }}
           for="my-text-field">
           [[label]]
         </label>
+
       <div class="mdc-line-ripple"></div>
       </input>
     </div>
