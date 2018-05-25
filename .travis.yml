@@ -1,8 +1,6 @@
 sudo: true
 dist: trusty
-  addons:
-    apt:
-      update: true
+
 language: node_js
 node_js: 8.9
 
@@ -16,9 +14,6 @@ addons:
 
 install:
   - npm install
-
-before_script:
-  - xvfb-run -s '-screen 0 1024x768x24';
 
 script:
   - npm test
