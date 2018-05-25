@@ -231,4 +231,4 @@ styleElement.innerHTML =
 
 /*# sourceMappingURL=mdc.card.css.map*/
 </style></template>`;
-styleElement.register('test-component-style'); 
+styleElement.register('test-card-style'); 

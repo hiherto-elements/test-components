@@ -20,16 +20,9 @@ export class TestCard extends PolymerElement  {
   
   static get template(){
     return html`
-      <style include="test-component-style"></style>
+    <style include="test-card-style"></style>
     <div class="mdc-card">
-      <template is="dom-if" if="{{_hasTitle()}}">
-        <div class="mdc-card">
-          <div class="mdc-card__media-content">
-            [[title]]
-          </div>
-        </div>
         <slot></slot>
-      </template>
     </div>`;
   }
 }

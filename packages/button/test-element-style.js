@@ -297,4 +297,4 @@ styleElement.innerHTML =
 
 /*# sourceMappingURL=mdc.button.css.map*/
 </style></template>`;
-styleElement.register('test-component-style'); 
+styleElement.register('test-button-style'); 

@@ -15,7 +15,7 @@ export class TestButton extends PolymerElement  {
 
   static get template() { 
     return html`
-    <style include="test-component-style">
+    <style include="test-button-style">
     </style>
     <button 
       disabled="[[disabled]]" 
