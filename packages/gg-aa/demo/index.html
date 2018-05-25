@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Material Web Components Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <demo-view></demo-view>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+
+		import {LitElement, html} from '@polymer/lit-element/lit-element.js';
+		import {GgAa} from '../gg-aa.js'
+
+    class DemoView extends LitElement {
+      _render() {
+        return html`
+					<gg-aa>foo</gg-aa>
+        `;
+      }
+    }
+
+    customElements.define('demo-view', DemoView);
+  </script>
+</body>
+</html>
