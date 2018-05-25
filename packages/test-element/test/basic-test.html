@@ -15,7 +15,7 @@
 
     <test-fixture id="BasicTestFixture">
       <template>
-        <test-element></test-element>
+        <test-element value="foo" label="bar"></test-element>
       </template>
     </test-fixture>
 
@@ -27,6 +27,23 @@
           const element = fixture('BasicTestFixture');
 					assert.ok(element); 
         });
+
+        it('has label', () => {
+          const element = fixture('BasicTestFixture');
+					assert.equal(element.label, 'bar'); 
+        });
+
+        it('takes the value', () => {
+          const element = fixture('BasicTestFixture');
+					assert.equal(element.value, 'foo'); 
+        });
+
+        it('placeholder', () => {
+          const element = fixture('BasicTestFixture');
+					assert.equal(element.placeHolder, ''); 
+        });
+
+
         
       });
     </script>

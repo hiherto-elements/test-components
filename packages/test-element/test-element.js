@@ -84,13 +84,6 @@ static get properties() { return { mood: String }}
           for="my-text-field">
           [[label]]
         </label>
-        <template is="dom-if" if="{{_isOutlined(outlined)}}">
-        <div class="mdc-notched-outline">
-          <svg>
-            <path class="mdc-notched-outline__path"/>
-          </svg>
-        </div>
-      </template>
       <div class="mdc-line-ripple"></div>
       </input>
     </div>
