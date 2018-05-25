@@ -13,7 +13,7 @@
   },
   "scripts": {
     "buildcss": "node ../css-render/bin/render.js -n test-component -c ./node_modules/@material/textfield/dist/mdc.textfield.css -o ./test-element-style.js",
-    "test": "../../node_modules/web-component-tester/bin/wct --npm ./test/*.html",
+    "test": "../../node_modules/web-component-tester/bin/wct ./test/*.html --npm ",
     "start": "../../node_modules/polyserve/bin/polyserve --npm --open",
     "reset": "rm -rf node_modules"
   }
