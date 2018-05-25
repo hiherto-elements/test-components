@@ -7,7 +7,7 @@
 		"web-component-tester": "^6.6.0"
 	}, 
 	"scripts": {
-		"test": "lerna run test",
+		"test": "npm run postinstall && lerna run test",
 		"postinstall": "lerna run bootstrap"
 	}
 }
