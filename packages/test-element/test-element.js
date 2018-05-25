@@ -67,7 +67,9 @@ static get properties() { return { mood: String }}
   // Define optional shadow DOM template
   static get template() { 
     return html`
-    <style include="test-component-style"></style>
+    <style include="test-component-style">
+    @import "@material/tabs/dist/mdc.tabs.css";
+    </style>
     <div 
       id="mdc-text-field">
       <template is="dom-if" if="{{_hasIcon(icon)}}">
