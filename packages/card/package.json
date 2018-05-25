@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
-  "name": "test-button",
-  "main": "test-button.js",
+  "name": "test-card",
+  "main": "test-card.js",
   "keywords": [
     "lit-element",
     "polymer3",
@@ -19,7 +19,7 @@
     "material-components-web": "^0.35.2"
   },
   "scripts": {
-    "buildcss": "node ../css-render/bin/render.js -n test-component -c ./node_modules/@material/button/dist/mdc.button.css -o ./test-element-style.js",
+    "buildcss": "node ../css-render/bin/render.js -n test-component -c ./node_modules/@material/card/dist/mdc.card.css -o ./test-element-style.js",
     "test": "../../node_modules/web-component-tester/bin/wct ./test/*.html --npm ",
     "start": "../../node_modules/polyserve/bin/polyserve --npm --open",
     "reset": "rm -rf node_modules"

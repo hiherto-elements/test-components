@@ -8,34 +8,25 @@
 
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/wct-browser-legacy/browser.js"></script>
- 
-    <script type="module" src="../test-button.js">
 
-    </script>
+    <script type="module" src="../test-card.js"></script>
   </head>
   <body>
 
     <test-fixture id="BasicTestFixture">
       <template>
-        <test-button>foo</test-button>
+        <test-card></test-card>
       </template>
     </test-fixture>
 
 
-    <script type="module">    
-      import '../node_modules/axe-core/axe.min.js';
-      import { axeReport } from '../node_modules/pwa-helpers/axe-report.js';
-
-      describe('test-button basic test', () => {
+    <script type="module">
+      describe('test-card basic test', () => {
 
         it('using the element dies not throw an error', () => {
           const element = fixture('BasicTestFixture');
 					assert.ok(element); 
         });
-        it('is accessible', function() {
-          const element = fixture('BasicTestFixture');
-          return axeReport(element);
-  });
         
       });
     </script>

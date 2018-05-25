@@ -1,6 +1,5 @@
 
 import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';
-
 import './test-element-style.js';
 export class TestButton extends PolymerElement  {
 

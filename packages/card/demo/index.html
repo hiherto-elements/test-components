@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
   <title>Material Web Components Catalog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,18 +13,15 @@
   <script type="module">
 
 		import {LitElement, html} from '@polymer/lit-element/lit-element.js';
-		import {TestButton} from '../test-button.js'
+		import {TestCard} from '../test-card.js'
 
     class DemoView extends LitElement {
       _render() {
         return html`
-          <test-button raised>foo</test-button>
-
-          <test-button>
-            <svg width="100" height="20">
-              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-            </svg>
-          </test-button>
+          <test-card title="foo">
+            <button></button>
+              <input></input>
+          </test-card>
         `;
       }
     }
