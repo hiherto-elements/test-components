@@ -1,13 +1,13 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "gg-aa",
   "main": "gg-aa.js",
   "devDependencies": {
     "wct-browser-legacy": "^1.0.1"
   },
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^2.0.0",
-    "@polymer/lit-element": "^0.5.1"
+    "@polymer/lit-element": "^0.5.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
   },
   "scripts": {
     "test": "../../node_modules/web-component-tester/bin/wct ./test/*.html --npm ",
