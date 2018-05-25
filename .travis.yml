@@ -15,5 +15,4 @@ addons:
 install:
   - npm install
 
-script:
-  - npm test
+script: xvfb-run npm test
