@@ -1,6 +1,5 @@
 
 import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';
-import '@polymer/polymer/lib/elements/dom-if.js';
 import './test-element-style.js';
 export class TestCard extends PolymerElement  {
 
@@ -21,7 +20,7 @@ export class TestCard extends PolymerElement  {
   static get template(){
     return html`
     <style include="test-card-style"></style>
-    <div class="mdc-card">
+    <div class="mdc-card--outlined">
         <slot></slot>
     </div>`;
   }
