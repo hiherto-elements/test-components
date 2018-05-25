@@ -5,5 +5,9 @@
 		"wct-browser-legacy": "^1.0.1",
 		"wct-headless": "^2.2.2",
 		"web-component-tester": "^6.6.0"
+	}, 
+	"scripts": {
+		"test": "lerna run test",
+		"postinstall": "lerna run bootstrap"
 	}
 }
