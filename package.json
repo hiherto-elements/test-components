@@ -1,13 +1,16 @@
 {
 	"devDependencies": {
 		"lerna": "^2.11.0",
+		"polylint": "^2.10.4",
 		"polyserve": "^0.27.11",
 		"wct-browser-legacy": "^1.0.1",
 		"wct-headless": "^2.2.2",
 		"web-component-tester": "^6.6.0"
-	}, 
+	},
 	"scripts": {
+		"pretest": "lerna run lint",
 		"test": "npm run postinstall && lerna run test",
+		"lint": "lerna run lint",
 		"postinstall": "lerna bootstrap"
 	}
 }
