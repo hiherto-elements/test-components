@@ -12,7 +12,7 @@
   "scripts": {
     "test": "../../node_modules/web-component-tester/bin/wct ./test/*.html --npm ",
     "start": "../../node_modules/polyserve/bin/polyserve --npm --open",
-    "lint": "../../node_modules/polylint/lib/polylint-bin.js --verbose -i *.js",
+    "lint": "../../node_modules/polylint/lib/polylint-bin.js --debug -i *.js",
     "reset": "rm -rf node_modules"
   }
 }
